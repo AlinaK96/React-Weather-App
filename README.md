@@ -15,3 +15,7 @@
 ### проект запуститься по адресу  [http://localhost:3000](http://localhost:3000)
 
 Для запросов погоды использован сайт OpenWeather (https://openweathermap.org/)
+
+![Вид:](./projectImg/1.png)
+![Вид:](./projectImg/2.png)
+![Вид:](./projectImg/3.png)
