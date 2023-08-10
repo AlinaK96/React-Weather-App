@@ -1,0 +1,33 @@
+.forecast-hour {
+  display: none;
+}
+
+.forecast-switcher__cards-container,
+.choosen {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 721px;
+  margin-left: 1px;
+}
+
+.forecast-hour__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100px;
+  height: 143px;
+  border-radius: 8px;
+  background-color: var(--background-light);
+  padding: 16px 14px 13px 15px;
+  background-position: center 24px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+}
+
+.forecast-hour__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+}

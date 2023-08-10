@@ -1,0 +1,15 @@
+.details-for-today {
+  width: 100%;
+}
+
+.details-for-today__title {
+  font-size: 24px;
+}
+
+.details-for-today__details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 721px;
+  padding-left: 2px;
+}

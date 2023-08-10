@@ -1,0 +1,13 @@
+.dark-theme {
+  --background-light: #212331;
+  --background-dark: #100e1c;
+
+  --text-main: #e6e6e6;
+  --text-secondary: #acacac;
+  --text-small: #6d6d6d;
+
+  --switcher-border: #acacac;
+  --switcher-moon: #ec6e4d;
+
+  --search-history-choosen: #100e1c;
+}

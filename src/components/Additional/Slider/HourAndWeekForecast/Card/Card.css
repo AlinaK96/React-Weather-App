@@ -1,0 +1,26 @@
+.card__title {
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__info > * {
+  font-size: 13px;
+}
+
+.card__info > .info__max {
+  font-size: 14px;
+}
+
+.card__info > .info__min {
+  font-size: 13px;
+  color: var(--text-small);
+}
+
+.forecast-hour__card > .card__info {
+  justify-content: center;
+}

@@ -1,0 +1,69 @@
+.forecast-switcher {
+  margin-bottom: 34px;
+}
+
+.forecast-switcher__switcher {
+  display: flex;
+  position: relative;
+}
+
+.forecast-switcher__switcher > * {
+  color: var(--text-small);
+}
+
+.forecast-switcher__inner {
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+
+.forecast-switcher__title {
+  font-size: 24px;
+  margin-right: 25px;
+}
+
+#forecast-switcher__title-week,
+#forecast-switcher__title-hour {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 2px;
+  border: 0;
+  background-color: transparent;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+#forecast-switcher__title-week:hover,
+#forecast-switcher__title-hour:hover {
+  color: var(--text-main);
+}
+
+#forecast-switcher__title-week {
+  margin-right: 17px;
+}
+
+.selected {
+  color: var(--text-main);
+}
+
+.bolder {
+  position: relative;
+}
+
+.bolder::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 3px;
+  background-color: var(--text-main);
+  transition: transform 0.3s ease;
+}
+
+.bolder.active::after {
+  transform: translateX(-50%) scaleX(1);
+}

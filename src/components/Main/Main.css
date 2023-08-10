@@ -1,0 +1,261 @@
+.main-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  min-height: 720px;
+  width: 460px;
+  padding: 42px 41px 31px;
+  background-color: var(--background-light);
+  background-image: url(../../img/cloud-background.png);
+  background-blend-mode: difference;
+  background-repeat: no-repeat;
+  background-position: center top 110px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.main-info__button-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#main-info__open-sidebar {
+  width: 180px;
+  height: 50px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  border: 2px solid var(--text-secondary);
+  border-radius: 10px;
+  background-color: transparent;
+  transition: 0.3s ease;
+}
+
+#main-info__open-sidebar:hover {
+  background-color: var(--text-secondary);
+  color: var(--background-light);
+}
+
+#main-info__switch-theme {
+  width: 64px;
+  height: 32px;
+  margin-right: 3px;
+  cursor: pointer;
+  border: 2px solid var(--switcher-border);
+  border-radius: 20px;
+  background-color: #0000;
+  position: relative;
+  display: inline-block;
+}
+
+#main-info__switch-theme::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: var(--switcher-moon) url('../../img/moon-light.svg') no-repeat center;
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  top: 4px;
+  transition: all 0.3s;
+}
+
+#main-info__switch-theme.active::before {
+  left: calc(100% - 26px);
+  background: var(--switcher-moon) url('../../img/moon-dark.svg') no-repeat center;
+}
+
+.main-info__center-img {
+  width: 200px;
+  flex: 1;
+  background: no-repeat center; 
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.main-info__big-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+.main-info__temperature {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.temperature__degree {
+  font-size: 96px;
+  font-weight: 900;
+}
+
+.main-info__weather {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.main-info__feelslike {
+  color: var(--text-secondary);
+}
+
+.main-info__small-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-left: 5px;
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-top: auto;
+}
+
+.main-info__date-inner {
+  display: flex;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.main-info__small-date {
+  color: var(--text-secondary);
+  width: 100px;
+  margin: 0 40px;
+}
+
+.main-info__small-date:first-child {
+  margin-left: 54px;
+}
+
+.main-info__location {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  padding-right: 40px;
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.main-info__location-city {
+  color: var(--text-secondary);
+  padding-bottom: 8px;
+  padding-right: 2px;
+  text-align: center;
+}
+
+.main-info__location-svg {
+  padding-right: 52px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../../img/location-mark.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: -15px;
+}
+
+@media (min-width: 834px) and (max-width: 1439px) {
+  .main-info {
+    position: fixed;
+    min-height: 100vh;
+    width: 330px;
+    padding: 53px 20px 35px 21px;
+    background-position: center top 308px;
+    background-size: 107%;
+    overflow-y: auto;
+  }
+
+  #main-info__switch-theme {
+    margin-right: -7px;
+  }
+
+  .main-info__center-img {
+    min-height: 182px;
+  }
+
+  .main-info__button-block {
+    padding: 0px 7px;
+    margin-bottom: 20px;
+  }
+
+  .main-info__big-info {
+    margin-bottom: 74px;
+  }
+
+  .main-info__small-info {
+    margin-bottom: -3px;
+  }
+
+  .main-info__date-inner {
+    justify-content: space-between;
+    margin-left: 6px;
+  }
+
+  .main-info__small-date {
+    margin: 0;
+  }
+
+  .main-info__small-date:first-child {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 833px) {
+  .main-info {
+    min-height: 666px;
+    height: 667px;
+    width: 100%;
+    padding: 31px 30px 44px;
+    background-image: url(../../img/cloud-background-phone.png);
+    background-position: center top 67px;
+    background-size: 100%;
+  }
+
+  .main-info__button-block {
+    margin-bottom: 60px;
+    width: 315px;
+  }
+
+  .main-info__center-img {
+    flex: none;
+    height: 100px;
+    margin-bottom: 12px;
+  }
+
+  #main-info__switch-theme {
+    margin-right: 0px;
+  }
+
+  .main-info__big-info {
+    margin: 0;
+    margin-bottom: 75px;
+  }
+
+  .main-info__small-info {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .main-info__date-inner {
+    justify-content: space-between;
+    margin-left: 15px;
+    width: 282px;
+  }
+
+  .main-info__small-date {
+    margin: 0;
+  }
+
+  .main-info__small-date:first-child {
+    margin-left: 2px;
+  }
+}
